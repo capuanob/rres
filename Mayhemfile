@@ -1,0 +1,9 @@
+image: ghcr.io/capuanob/rres-fuzz:latest
+project: rres
+target: rress-fuzz
+tests:
+    - file://corpus
+
+cmds:
+  - cmd: /rres-fuzzer @@
+    max_length: 20000000

@@ -1,7 +1,6 @@
-image: ghcr.io/capuanob/rres-fuzz:latest
 project: rres
 target: rress-fuzz
-tests:
+testsuite:
     - file://corpus
 
 cmds:
